@@ -1,0 +1,138 @@
+
+
+@font-face {
+    font-family: face1;
+    src: url(./file.woff2);
+}
+
+@font-face {
+    font-family:face2 ;
+    src: url(./file1.woff2);
+}
+@font-face {
+    font-family:face3 ;
+    src: url(./file2.woff2);
+}
+@font-face {
+    font-family:face4 ;
+    src: url(./file3.woff2);
+}
+@font-face {
+    font-family:face5 ;
+    src: url(./file4.woff2);
+}
+
+@font-face {
+    font-family: fa;
+    src: url(./madefor-text.var.original.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color: white;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    background-color: black;
+}
+#loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #0B0B0B;
+    padding: 30vh 10vw;
+
+}
+.line{
+    /* background-color: red; */
+    /* height: fit-content; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+
+}
+#wrap{
+    height: 50%;
+}
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1vw
+}
+#line1-part1 h5 , #line1-part1 h6{
+    font-size: 3vw;
+    font-family: fa;
+    font-weight: 100;
+}
+#line1-part1 h5 {
+    width: 5vw;
+    text-align: right;
+}
+
+.line h1{
+    font-size: 6vw;
+    font-family:face4 ;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.line h2{
+    /* font-family:face4 ; */
+     font-size: 5vw;
+     text-transform: uppercase;
+     animation-name: anime;
+     animation-duration:2s  ;
+     animation-iteration-count: infinite;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: #100f0f;
+}
+
+@keyframes anime {
+    0%{
+        font-family : fa;
+        -webkit-text-stroke :0.1 #fff;
+        /* color : #fff; */
+        color: transparent;
+        
+        font-weight: 500;
+        opacity: 0;
+    }
+    47%{
+        font-family : face2;
+        -webkit-text-stroke :0.5px #fff;
+        /* color : #fff; */
+        color: transparent;
+        font-weight: 900;
+        opacity: 1;
+    }
+    50%{
+        font-family: fa;
+        -webkit-text-stroke :0.1px #736f6f;
+        font-weight: 500;
+        color: transparent;
+        opacity: 0;
+    }
+    100%{
+        font-family: fa;
+        -webkit-text-stroke :0.1px #822828;
+        font-weight: 900;
+        /* color: transparent; */
+        color: #fff;
+        opacity: 1;
+    }
+}
